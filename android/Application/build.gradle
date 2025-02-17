@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
@@ -50,7 +50,6 @@ List<String> dirs = [
 android {
 
     compileSdkVersion 30
-    buildToolsVersion '30.0.2'
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
@@ -61,7 +60,7 @@ android {
     defaultConfig {
         applicationId "org.andan.android.connectiq.wormnav"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 121
         versionName '1.2.1'
         setProperty("archivesBaseName", "Worm navigation")
