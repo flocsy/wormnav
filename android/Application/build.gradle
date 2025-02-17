@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
+        classpath 'com.android.tools.build:gradle:8.8.1'
     }
 }
 
@@ -68,13 +68,13 @@ List<String> dirs = [
 
 android {
 
-    compileSdk 34
-
+    compileSdk 35
     packagingOptions {
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/NOTICE', 'META-INF/LICENSE']
+        }
     }
+
 
     defaultConfig {
         applicationId "org.andan.android.connectiq.wormnav"
