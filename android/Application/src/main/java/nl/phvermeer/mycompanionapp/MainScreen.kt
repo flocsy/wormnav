@@ -291,7 +291,7 @@ fun SelectGpxRow(modifier: Modifier = Modifier, onSelected: (gpx: Gpx) -> Unit =
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = {
-                filePicker.launch(arrayOf("application/octet-stream"))
+                filePicker.launch(arrayOf("application/gpx+xml", "application/octet-stream"))
             }) {
             Text(stringResource(R.string.select_gpx))
         }
