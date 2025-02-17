@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.8.1'
     }
 }
 
@@ -49,6 +49,7 @@ List<String> dirs = [
 
 android {
 
+    namespace 'org.andan.android.connectiq.wormnav'
     compileSdkVersion 30
 
     packagingOptions {
